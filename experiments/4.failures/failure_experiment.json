@@ -18,14 +18,6 @@
         {
             "type": "trace-based",
             "pathToFile": "failure_traces/Facebook_user_reported.parquet"
-        },
-        {
-            "type": "trace-based",
-            "pathToFile": "failure_traces/Instagram_user_reported.parquet"
-        },
-        {
-            "type": "trace-based",
-            "pathToFile": "failure_traces/Netflix_user_reported.parquet"
         }
     ],
     "exportModels": [
