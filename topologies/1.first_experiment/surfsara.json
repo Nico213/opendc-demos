@@ -25,7 +25,8 @@
                 }
             ],
             "powerSource": {
-                "carbonTracePath": "carbon_traces/NL_2021-2024.parquet"
+                "carbonTracePath": "carbon_traces/NL_2021-2024.parquet",
+                "energyCostTracePath": "energy_traces/test_set_2021-2024.parquet"
             }
         }
     ]

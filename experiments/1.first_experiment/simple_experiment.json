@@ -17,9 +17,10 @@
             "printFrequency": 24,
             "filesToExport": [
                 "host",
+                "task",
                 "powerSource",
                 "service",
-                "task"
+                "costmodel"
             ]
         }
     ]
