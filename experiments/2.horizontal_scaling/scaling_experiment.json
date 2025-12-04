@@ -19,7 +19,8 @@
                 "host",
                 "powerSource",
                 "service",
-                "task"
+                "task",
+                "costmodel"
             ]
         }
     ]
