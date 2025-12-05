@@ -77,12 +77,18 @@ def generate_prices():
         prices.append(price)
         prev_price = price
 
+
+    schema = pa.schema({
+        "timestamp": pa.timestamp("ms"),
+        "price_per_kwh": pa.float64()
+    })
+    
     df = pd.DataFrame({
         "timestamp": timestamps,
         "price_per_kwh": prices
     })
 
-    table = pa.Table.from_pandas(df)
+    table = pa.Table.from_pandas(df, schema)
     pq.write_table(table, "test_set_2021-2024.parquet")
 
     print(f"Generated test_set_2021-2024.parquet with {len(df)} rows.")
